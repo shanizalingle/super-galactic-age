@@ -1,9 +1,10 @@
 export default class SuperGalacticAge {
-  constructor(earthAge, mercuryAge, venusAge, marsAge) {
+  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge) {
     this.earthAge = earthAge;
     this.mercuryAge = mercuryAge;
     this.venusAge = venusAge;
     this.marsAge = marsAge;
+    this.jupiterAge = jupiterAge;
   }
 
   findMercuryAge() {
@@ -25,6 +26,13 @@ export default class SuperGalacticAge {
     newMarsAge = Math.round((this.earthAge * 1.88) * 100)/100;
     this.marsAge = newMarsAge;
     return newMarsAge;
+  }
+
+  findJupiterAge() {
+    let newJupiterAge;
+    newJupiterAge = Math.round((this.earthAge * 11.86) * 100)/100;
+    this.jupiterAge = newJupiterAge;
+    return newJupiterAge;
   }
 }
 
