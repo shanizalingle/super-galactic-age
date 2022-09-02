@@ -16,4 +16,9 @@ describe ("SuperGalacticAge", () => {
     let superGalacticAge = new SuperGalacticAge(18);
     expect(superGalacticAge.findVenusAge()).toEqual(11.16);
   })
+
+  test("return mars age", () => {
+    let superGalacticAge = new SuperGalacticAge(18);
+    expect(superGalacticAge.findMarsAge()).toEqual(33.84);
+  })
 })
