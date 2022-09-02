@@ -38,4 +38,9 @@ describe ("SuperGalacticAge", () => {
     let superGalacticAge = new SuperGalacticAge(18);
     expect(superGalacticAge.findMercuryLifeSpan()).toEqual(1.2);
   })
+
+    test("return venus life span", () => {
+    let superGalacticAge = new SuperGalacticAge(18);
+    expect(superGalacticAge.findVenusLifeSpan()).toEqual(31.6);
+  })
 })
