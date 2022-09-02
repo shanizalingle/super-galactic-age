@@ -1,7 +1,8 @@
 import SuperGalacticAge from "../src/js/business.js";
 
 describe ("SuperGalacticAge", () => {
-  
+
+// Determine age on other planets
   test("return inputted age", () => {
     let superGalacticAge = new SuperGalacticAge(18);
     expect(superGalacticAge.earthAge).toEqual(18);
@@ -25,5 +26,11 @@ describe ("SuperGalacticAge", () => {
   test("return jupiter age", () => {
     let superGalacticAge = new SuperGalacticAge(18);
     expect(superGalacticAge.findJupiterAge()).toEqual(213.48);
+  })
+
+// Determine lifespan on other planets
+  test("return inputted age", () => {
+    let superGalacticAge = new SuperGalacticAge(18);
+    expect(superGalacticAge.findEarthLifeSpan()).toEqual(62);
   })
 })
