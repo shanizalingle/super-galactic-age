@@ -80,5 +80,9 @@ export default class SuperGalacticAge {
       return newVenusLifeSpan;
     }
   }
+
+  findMarsLifeSpan() {
+    return null;
+  }
 }
 
