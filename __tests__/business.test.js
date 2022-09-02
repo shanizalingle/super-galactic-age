@@ -1,14 +1,14 @@
-import Age from "../src/js/business.js";
+import SuperGalacticAge from "../src/js/business.js";
 
-describe ("Age", () => {
+describe ("SuperGalacticAge", () => {
   
   test("return inputted age", () => {
-    let age = new Age(18);
-    expect(age.earthAge).toEqual(18);
+    let superGalacticAge = new SuperGalacticAge(18);
+    expect(superGalacticAge.earthAge).toEqual(18);
   })
 
   test("return mercury age", () => {
-    let age = new Age(18);
-    expect(age.mercuryAge).toEqual(4.32);
+    let superGalacticAge = new SuperGalacticAge(18);
+    expect(superGalacticAge.findMercuryAge()).toEqual(4.32);
   })
 })
