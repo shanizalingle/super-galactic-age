@@ -66,5 +66,19 @@ export default class SuperGalacticAge {
       return newMercuryLifeSpan;
     }
   }
+
+  findVenusLifeSpan() {
+    let newVenusLifeSpan;
+    /*istanbul ignore else*/
+    if (this.earthAge < 49.6) {
+      newVenusLifeSpan = Math.round((49.6 - this.earthAge) * 10)/10;  
+      this.earthLifeSpan = newVenusLifeSpan;
+      return newVenusLifeSpan;
+    } else {
+      newVenusLifeSpan = Math.round((49.6 - this.earthAge) * 10)/10;  
+      this.earthLifeSpan = newVenusLifeSpan;
+      return newVenusLifeSpan;
+    }
+  }
 }
 
