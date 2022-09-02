@@ -1,5 +1,5 @@
 export default class SuperGalacticAge {
-  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge, earthLifeSpan, mercuryLifeSpan) {
+  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge, earthLifeSpan, mercuryLifeSpan, venusLifeSpan, marsLifeSpan) {
     this.earthAge = earthAge;
     this.mercuryAge = mercuryAge;
     this.venusAge = venusAge;
@@ -7,6 +7,8 @@ export default class SuperGalacticAge {
     this.jupiterAge = jupiterAge;
     this.earthLifeSpan = earthLifeSpan;
     this.mercuryLifeSpan = mercuryLifeSpan;
+    this.venusLifeSpan = venusLifeSpan;
+    this.marsLifeSpan = marsLifeSpan;
   }
 
 // Determine age on other planets
@@ -82,7 +84,18 @@ export default class SuperGalacticAge {
   }
 
   findMarsLifeSpan() {
-    return null;
+    let newMarsLifeSpan;
+    /*istanbul ignore else*/
+    if (this.earthAge < 150.4) {
+      newMarsLifeSpan = Math.round((150.4 - this.earthAge) * 10)/10;  
+      this.earthLifeSpan = newMarsLifeSpan;
+      return newMarsLifeSpan;
+    } else {
+      newMarsLifeSpan = Math.round((150.4 - this.earthAge) * 10)/10;  
+      this.earthLifeSpan = newMarsLifeSpan;
+      return newMarsLifeSpan;
+    }
   }
+
 }
 
