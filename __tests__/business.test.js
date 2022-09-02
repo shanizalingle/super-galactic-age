@@ -10,22 +10,22 @@ describe ("SuperGalacticAge", () => {
 
   test("return mercury age", () => {
     let superGalacticAge = new SuperGalacticAge(18);
-    expect(superGalacticAge.findMercuryAge()).toEqual(4.32);
+    expect(superGalacticAge.findMercuryAge()).toEqual(4.3);
   })
 
   test("return venus age", () => {
     let superGalacticAge = new SuperGalacticAge(18);
-    expect(superGalacticAge.findVenusAge()).toEqual(11.16);
+    expect(superGalacticAge.findVenusAge()).toEqual(11.2);
   })
 
   test("return mars age", () => {
     let superGalacticAge = new SuperGalacticAge(18);
-    expect(superGalacticAge.findMarsAge()).toEqual(33.84);
+    expect(superGalacticAge.findMarsAge()).toEqual(33.8);
   })
 
   test("return jupiter age", () => {
     let superGalacticAge = new SuperGalacticAge(18);
-    expect(superGalacticAge.findJupiterAge()).toEqual(213.48);
+    expect(superGalacticAge.findJupiterAge()).toEqual(213.5);
   })
 
 // Determine lifespan on other planets
@@ -35,17 +35,22 @@ describe ("SuperGalacticAge", () => {
   })
 
   test("return mercury life span", () => {
-    let superGalacticAge = new SuperGalacticAge(18);
-    expect(superGalacticAge.findMercuryLifeSpan()).toEqual(1.2);
+    let superGalacticAge = new SuperGalacticAge(4.3);
+    expect(superGalacticAge.findMercuryLifeSpan()).toEqual(14.9);
   })
 
   test("return venus life span", () => {
-    let superGalacticAge = new SuperGalacticAge(18);
-    expect(superGalacticAge.findVenusLifeSpan()).toEqual(31.6);
+    let superGalacticAge = new SuperGalacticAge(11.2);
+    expect(superGalacticAge.findVenusLifeSpan()).toEqual(38.4);
   })
 
   test("return mars life span", () => {
-    let superGalacticAge = new SuperGalacticAge(18);
-    expect(superGalacticAge.findMarsLifeSpan()).toEqual(132.4);
+    let superGalacticAge = new SuperGalacticAge(33.8);
+    expect(superGalacticAge.findMarsLifeSpan()).toEqual(116.6);
+  })
+
+  test("return jupiter life span", () => {
+    let superGalacticAge = new SuperGalacticAge(213.5);
+    expect(superGalacticAge.findJupiterLifeSpan()).toEqual(735.3);
   })
 })
