@@ -29,8 +29,13 @@ describe ("SuperGalacticAge", () => {
   })
 
 // Determine lifespan on other planets
-  test("return inputted age", () => {
+  test("return earth life span", () => {
     let superGalacticAge = new SuperGalacticAge(18);
     expect(superGalacticAge.findEarthLifeSpan()).toEqual(62);
+  })
+
+  test("return mercury life span", () => {
+    let superGalacticAge = new SuperGalacticAge(18);
+    expect(superGalacticAge.findMercuryLifeSpan()).toEqual(31.6);
   })
 })
